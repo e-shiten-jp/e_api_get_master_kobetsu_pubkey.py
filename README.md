@@ -64,14 +64,6 @@ APIの基本設計について
 ５）実行内容は、以下になります。
 
 		指定した項目のマスターデータを取得。  
-        	CLMIssueMstKabu       銘柄マスタ_株					
-        	CLMIssueSizyouMstKabu	銘柄市場マスタ_株					
-        	CLMIssueMstSak        銘柄マスタ_先物					
-        	CLMIssueMstOp         銘柄マスタ_ＯＰ					
-        	CLMIssueMstOther      日経平均等指数、為替、その他上記外					
-        	CLMOrderErrReason     取引所エラー理由コード		
-        	CLMDateZyouhou        日付情報	
-  		
   		取得結果をcsv形式で保存。
   
   	指数、為替の銘柄コード、銘柄名は、銘柄マスターの個別取得（e_api_get_master_kobetsu.py ）のみで取得できます。
