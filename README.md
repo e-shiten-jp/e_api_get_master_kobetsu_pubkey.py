@@ -35,22 +35,25 @@ APIの基本設計について
 １）動作テストを実行した環境
 
 	Python 3.13.5 / debian13 
-	APIバージョン： v4r9
+	APIバージョン： v4r10
 
 ２）事前に立花証券ｅ支店に口座開設が必要です。
 
  
 ３）利用時に変数を設定してください。
 
-      # 取得するマスター項目の選択（コメント'##'を外して指定。選択は1つのみ。）
-      S_TARGET_CLMID = 'CLMIssueMstKabu'         # 株式 銘柄マスタ
-      ##S_TARGET_CLMID = 'CLMIssueSizyouMstKabu'   # 株式 銘柄市場マスタ
-      ##S_TARGET_CLMID = 'CLMIssueMstSak'          # 先物
-      ##S_TARGET_CLMID = 'CLMIssueMstOp'           # ＯＰ
-      ##S_TARGET_CLMID = 'CLMIssueMstOther'        # 指数、為替、その他
-      ##S_TARGET_CLMID = 'CLMOrderErrReason'       # 取引所エラー理由コード
-      ##S_TARGET_CLMID = 'CLMDateZyouhou'          # 日付情報
-      # （呼値  呼び値は、個別ダウンロードでは指定不可。）
+      # S_CLMID = 'CLMStkGetIssueMstKabu'      #・株式銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueSizyouMstKabu'     # 株式銘柄市場マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstOp'     # オプション銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstSak'     # 先物銘柄マスタ問合取得
+	# ###S_CLMID = 'CLMStkGetIssueMstIndex'     # 指数銘柄マスタ問合取得
+	# ###S_CLMID = 'CLMStkGetIssueMstFx'     # 為替銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetOrderErrReason'     # 取引所エラー等理由コード情報問合取得
+	S_CLMID = 'CLMStkGetDateZyouhou'     # 日付情報問合取得
+	# S_CLMID = 'CLMStkGetYobine'     # 呼値情報問合取得
+	# S_CLMID = 'CLMStkGetDaiyouKakeme'     # 代用掛目情報問合取得
+	# ###S_CLMID = 'CLMStkGetIssueSizyouKiseiKabu'     # 株式銘柄別
+	# S_CLMID = 'CLMStkGetHosyoukinMst'     # 保証金マスタ問合取得
   
 ４)実行は設定ファイルや「e_api_login_pubkey.py」と同じディレクトリで実行してください。
 
