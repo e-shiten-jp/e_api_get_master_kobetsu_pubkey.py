@@ -42,19 +42,20 @@ APIの基本設計について
  
 ３）利用時に変数を設定してください。
 
-      # S_CLMID = 'CLMStkGetIssueMstKabu'      #・株式銘柄マスタ問合取得
-	# S_CLMID = 'CLMStkGetIssueSizyouMstKabu'     # 株式銘柄市場マスタ問合取得
-	# S_CLMID = 'CLMStkGetIssueMstOp'     # オプション銘柄マスタ問合取得
-	# S_CLMID = 'CLMStkGetIssueMstSak'     # 先物銘柄マスタ問合取得
-	# ###S_CLMID = 'CLMStkGetIssueMstIndex'     # 指数銘柄マスタ問合取得
-	# ###S_CLMID = 'CLMStkGetIssueMstFx'     # 為替銘柄マスタ問合取得
-	# S_CLMID = 'CLMStkGetOrderErrReason'     # 取引所エラー等理由コード情報問合取得
-	S_CLMID = 'CLMStkGetDateZyouhou'     # 日付情報問合取得
-	# S_CLMID = 'CLMStkGetYobine'     # 呼値情報問合取得
-	# S_CLMID = 'CLMStkGetDaiyouKakeme'     # 代用掛目情報問合取得
-	# ###S_CLMID = 'CLMStkGetIssueSizyouKiseiKabu'     # 株式銘柄別
-	# S_CLMID = 'CLMStkGetHosyoukinMst'     # 保証金マスタ問合取得
-  
+    # S_CLMID = 'CLMStkGetIssueMstKabu'             # 1.株式銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueSizyouMstKabu'       # 2.株式銘柄市場マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstSak'              # 3.先物銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstOp'               # 4.オプション銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstIndex'            # 5.指数銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetIssueMstFx'               # 6.為替銘柄マスタ問合取得
+	# S_CLMID = 'CLMStkGetDateZyouhou'              # 7.日付情報問合取得
+	# S_CLMID = 'CLMStkGetYobine'                   # 8.呼値情報問合取得
+	# S_CLMID = 'CLMStkGetDaiyouKakeme'             # 9.代用掛目情報問合取得
+	# S_CLMID = 'CLMStkGetIssueSizyouKiseiKabu'     # 10.株式銘柄別・市場別規制情報問合取得
+	# S_CLMID = 'CLMStkGetIssueSizyouKiseiHasei'    # 11.派生銘柄別・市場別規制情報問合取得
+	# S_CLMID = 'CLMStkGetHosyoukinMst'             # 12.保証金マスタ情報問合取得
+	# S_CLMID = 'CLMStkGetOrderErrReason'           # 13.取引所エラー等理由コード情報問合取得
+  	
 ４)実行は設定ファイルや「e_api_login_pubkey.py」と同じディレクトリで実行してください。
 
 	事前に
