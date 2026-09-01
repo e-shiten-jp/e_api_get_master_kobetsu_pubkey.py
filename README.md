@@ -41,7 +41,8 @@ APIの基本設計について
 
  
 ３）利用時に変数を設定してください。
-	（コメント'#'を外してください。）
+	
+	取得するマスター項目の選択（コメント'##'を外して指定。選択は1つのみ。）
     # S_CLMID = 'CLMStkGetIssueMstKabu'             # 1.株式銘柄マスタ問合取得
 	# S_CLMID = 'CLMStkGetIssueSizyouMstKabu'       # 2.株式銘柄市場マスタ問合取得
 	# S_CLMID = 'CLMStkGetIssueMstSak'              # 3.先物銘柄マスタ問合取得
